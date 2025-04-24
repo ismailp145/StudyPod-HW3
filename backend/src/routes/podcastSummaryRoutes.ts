@@ -84,6 +84,9 @@ router.post('/', validatePodcastSummary, async (req: Request, res: Response): Pr
       const podcastScript = response.text();
       console.log("Successfully received response from Gemini API.");
 
+      // add to podcastSummaries
+      podcastSummaries.push({ id: podcastSummaries.length + 1, title: title, textContent: podcastScript });
+
       // --- Return Result ---
       res.status(200).json({ podcast_script: podcastScript });
       return 
@@ -97,6 +100,7 @@ router.post('/', validatePodcastSummary, async (req: Request, res: Response): Pr
           res.status(400).json({ error: "Content blocked due to safety settings.", details: error.message });
           return
       }
+      
 
       // Generic server error
       res.status(500).json({ error: "Failed to generate podcast script due to an internal server error." });
