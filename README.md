@@ -39,3 +39,38 @@ ensuring smooth navigation and score tracking even during peak usage times.
 3. Usability: The website should be mobile-friendly, with an intuitive interface that achieves a user satisfaction score of at least 80% in terms of ease of use and Navigation.
 
 4. Scalability: The platform must support up to 50 active concurrently without significant slowdowns or issues.
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- pnpm (v8 or higher)
+
+### Installation & Setup
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   cd backend
+   pnpm install
+   cd ../frontend
+   pnpm install
+   ```
+3. Set up environment variables:
+   - Copy `.env.example` to `.env` in the backend directory
+   - Add your Gemini API key to `.env`
+
+4. Start the development servers:
+   ```bash
+   # Terminal 1 - Backend
+   cd backend
+   pnpm dev
+
+   # Terminal 2 - Frontend 
+   cd frontend
+   pnpm start
+   or 
+   npm run dev
+   ```
+
+5. Open Expo Go on your mobile device and scan the QR code
