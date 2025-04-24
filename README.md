@@ -39,12 +39,10 @@ ensuring smooth navigation and score tracking even during peak usage times.
 3. Usability: The website should be mobile-friendly, with an intuitive interface that achieves a user satisfaction score of at least 80% in terms of ease of use and Navigation.
 
 4. Scalability: The platform must support up to 50 active concurrently without significant slowdowns or issues.
-
 ## Getting Started
 
 ### Prerequisites
 - Node.js (v18 or higher)
-- pnpm (v8 or higher)
 
 ### Installation & Setup
 
@@ -52,9 +50,9 @@ ensuring smooth navigation and score tracking even during peak usage times.
 2. Install dependencies:
    ```bash
    cd backend
-   pnpm install
+   npm install
    cd ../frontend
-   pnpm install
+   npm install
    ```
 3. Set up environment variables:
    - Copy `.env.example` to `.env` in the backend directory
@@ -64,13 +62,11 @@ ensuring smooth navigation and score tracking even during peak usage times.
    ```bash
    # Terminal 1 - Backend
    cd backend
-   pnpm dev
+   npm run dev
 
    # Terminal 2 - Frontend 
    cd frontend
-   pnpm start
-   or 
-   npm run dev
+   npm start
    ```
 
 5. Open Expo Go on your mobile device and scan the QR code
